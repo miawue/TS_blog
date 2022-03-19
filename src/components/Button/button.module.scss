@@ -1,0 +1,74 @@
+@import '../../style/variables.scss';
+@import '../../style/mixins.scss';
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.success_create {
+  font-size: 18px;
+  @include success;
+  padding: 4px 8px;
+  margin-right: 28px;
+}
+
+.edit {
+  font-size: 18px;
+  @include success;
+  font-size: 14px;
+  padding: 4px 16px;
+}
+
+.success {
+  font-size: 18px;
+  @include success;
+  padding: 8px 16px;
+  margin-left: 20px;
+}
+
+.logOut {
+  font-size: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  padding: 8px 16px;
+  margin-left: 28px;
+}
+
+.highlight,
+.info {
+  padding: 8px 36px;
+  margin-left: 16px;
+}
+
+.highlight_delete {
+  @include highlight;
+  padding: 4px 16px;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.tag_delete {
+  @include highlight;
+  padding: 8px 36px;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.info {
+  font-size: 14px;
+  border: 1px solid $info-color;
+  color: $info-color;
+}
+
+.primary {
+  width: 320px;
+  font-size: 16px;
+  background-color: $primary-color;
+  color: $background-color-base;
+  padding: 8px 16px;
+  margin-top: 20px;
+}

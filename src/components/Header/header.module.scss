@@ -1,0 +1,28 @@
+@import '../../style/variables.scss';
+@import '../../style/mixins.scss';
+
+.header {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color-base;
+  min-height: 80px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  padding: 16px 20px;
+  color: $heading-color;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+.authorization {
+  display: flex;
+  align-items: center;
+}

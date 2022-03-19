@@ -1,0 +1,50 @@
+@import '../../style/mixins.scss';
+@import '../../style/variables.scss';
+
+.input {
+  font-size: 14px;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  outline: none;
+
+  & .text {
+    margin-top: 20px;
+  }
+
+  & .for_checkbox {
+    display: flex;
+    align-items: baseline;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+
+  & .input {
+    &:not([type='checkbox']) {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    &[type='checkbox'] {
+      order: -1;
+      margin-right: 8px;
+    }
+
+    &::placeholder {
+      color: #bfbfbf;
+    }
+  }
+
+  &_tag {
+    width: 300px;
+  }
+}
+
+.error {
+  border: 1px solid $highlight-color;
+}

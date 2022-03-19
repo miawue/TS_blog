@@ -1,0 +1,25 @@
+@import '../../style/mixins.scss';
+
+.favorited {
+  @include flex-container;
+
+  & img {
+    width: 16px;
+    height: 16px;
+
+    align-self: center;
+  }
+}
+
+.like_resolved {
+  cursor: pointer;
+}
+
+.like_disabled {
+  cursor: auto;
+}
+
+.count {
+  margin-left: 4px;
+  align-self: center;
+}

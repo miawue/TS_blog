@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+body {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: $font-size-sm;
+  font-style: normal;
+  line-height: 22px;
+  color: $text-color;
+  background-color: #ebeef3;
+  height: 100vh;
+}

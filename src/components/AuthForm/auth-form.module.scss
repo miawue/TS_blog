@@ -1,0 +1,85 @@
+@import '../../style/variables.scss';
+@import '../../style/mixins.scss';
+
+.wrapper {
+  width: 384px;
+  background-color: $background-color-base;
+  font-family: 'Roboto';
+  color: #262626;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.title {
+  @include form-title;
+}
+
+.label {
+  font-size: 14px;
+
+  & .text {
+    margin-top: 20px;
+  }
+
+  &.for_checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 20px;
+  }
+
+  & .input {
+    &:not([type='checkbox']) {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    &[type='checkbox'] {
+      order: -1;
+
+      margin-right: 28px;
+    }
+
+    &::placeholder {
+      color: #bfbfbf;
+    }
+  }
+
+  .text_checkbox {
+    order: 1;
+    width: 80%;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .error {
+    @include error;
+    width: 100%;
+    margin-top: 2px;
+    order: 3;
+  }
+}
+
+.bottom_container {
+  margin-top: 8px;
+}
+
+.link_text {
+  color: $info-color;
+  margin-left: 4px;
+}
+
+.input_checkbox {
+  height: 20px;
+  border: 1px solid black;
+}
+
+.wrapper_checkbox {
+  width: 16px;
+  margin-right: 8px;
+}

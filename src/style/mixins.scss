@@ -1,0 +1,38 @@
+@import '../style/variables.scss';
+
+@mixin flex-container {
+  display: flex;
+  align-items: center;
+}
+
+@mixin page-container {
+  min-width: 700px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@mixin wrapper {
+  box-shadow: (0px 4px 12px rgba(0, 0, 0, 0.15));
+  background-color: $background-color-base;
+  padding: 16px 20px;
+}
+
+@mixin form-title {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+@mixin error {
+  color: $highlight-color;
+}
+
+@mixin success {
+  border: 1px solid $success-color;
+  color: $success-color;
+}
+
+@mixin highlight {
+  border: 1px solid $highlight-color;
+  color: $highlight-color;
+}
